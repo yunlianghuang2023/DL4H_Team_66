@@ -102,8 +102,7 @@ class CustomBertModel(BertModel):
 
         embedding_output = self.embeddings(input_ids, age_ids, seg_ids, posi_ids)
         encoded_layers = self.encoder(embedding_output,
-                                      extended_attention_mask,
-                                      output_all_encoded_layers=output_all_encoded_layers)
+                                      extended_attention_mask)
         sequence_output = encoded_layers[-1]
         pooled_output = self.pooler(sequence_output)
         if not output_all_encoded_layers:

@@ -46,6 +46,9 @@ class MLMLoader(Dataset):
         code = seq_padding(code, self.max_len, symbol=self.vocab['PAD'])
         label = seq_padding(label, self.max_len, symbol=-1)
 
+        code = np.array([int(token) if token.isdigit() else 0 for token in code])
+        label = np.array([int(value) for value in label])
+
         return torch.LongTensor(age), torch.LongTensor(code), torch.LongTensor(position), torch.LongTensor(segment), \
                torch.LongTensor(mask), torch.LongTensor(label)
 

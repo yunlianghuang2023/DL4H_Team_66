@@ -10,4 +10,5 @@ The code for the paper "BEHRT: Transformer for Electronic Health Records"
 	1. model/MLM.py: Defines three Bert model classes - BertEmbeddings, CustomBertModel, and BertForMaskedLM. The calling sequence is BertForMaskedLM -> CustomBertModel -> BertEmbeddings. These models are utilized for training the Bert model later.
 	2. model/utils.py: Defines a helper function called age_vocab, which is utilized in MLM_UIUC.ipynb.
 	3. model/optimiser.py: Defines an optimizer function called at MLM_UIUC.ipynb.
-MLM_UIUC.ipynb: This main file is responsible for training and evaluating Bert models. It encompasses data loading, reading, and validation, model training and evaluation, and presents the final results.![image](https://github.com/yunlianghuang2023/DL4H_Team_66/assets/139084839/1af37500-139b-4e11-848d-f1fd55224207)
+MLM_UIUC.ipynb: 
+	This main file is responsible for training and evaluating Bert models. It encompasses data loading, reading, and validation, model training and evaluation, and presents the final results.![image](https://github.com/yunlianghuang2023/DL4H_Team_66/assets/139084839/1af37500-139b-4e11-848d-f1fd55224207)
